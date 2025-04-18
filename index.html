@@ -1,0 +1,36 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simple Password Generator</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Generate a Secure Password</h1>
+
+    <div class="controls">
+      <label>
+        Length:
+        <input type="number" id="length" min="4" max="128" value="12" />
+      </label>
+
+      <label><input type="checkbox" id="lower" checked /> Include lowercase</label>
+      <label><input type="checkbox" id="upper" checked /> Include UPPERCASE</label>
+      <label><input type="checkbox" id="number" checked /> Include numbers</label>
+      <label><input type="checkbox" id="symbol" checked /> Include symbols</label>
+    </div>
+
+    <div class="buttons">
+      <button id="generate">Generate</button>
+      <button id="copy">Copy</button>
+    </div>
+
+    <input type="text" id="output" readonly placeholder="Your password will appear here…" />
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
