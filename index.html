@@ -4,21 +4,43 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Simple Password Generator</title>
+  <title>KwikPass.app — Free Password Generator</title>
   <link rel="stylesheet" href="css/style.css" />
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3843783457077507"
-     crossorigin="anonymous"></script>
+  <!-- Global AdSense snippet for Auto Ads -->
+  <script async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3843783457077507"
+          crossorigin="anonymous"></script>
 </head>
 <body>
   <div class="container">
-    <h1>Generate a Secure Password</h1>
+    <h1>Generate a Secure Password in Seconds</h1>
+
+    <p>
+      Strong passwords are your first line of defense online. KwikPass.app helps you
+      create random, high‑entropy passwords with no signup required.
+    </p>
+    <p>
+      Choose your length (4–128) and character sets (lowercase, UPPERCASE, numbers,
+      symbols), click “Generate,” then copy your new password with one click.
+      It’s fast, simple, and ad‑free in the tool itself.
+    </p>
+
+    <!-- Manual AdSense unit (replace YOUR_AD_SLOT with your actual slot ID) -->
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center; margin:1.5rem 0;"
+         data-ad-client="ca-pub-3843783457077507"
+         data-ad-slot="YOUR_AD_SLOT"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
 
     <div class="controls">
       <label>
         Length:
         <input type="number" id="length" min="4" max="128" value="12" />
       </label>
-
       <label><input type="checkbox" id="lower" checked /> Include lowercase</label>
       <label><input type="checkbox" id="upper" checked /> Include UPPERCASE</label>
       <label><input type="checkbox" id="number" checked /> Include numbers</label>
@@ -31,6 +53,11 @@
     </div>
 
     <input type="text" id="output" readonly placeholder="Your password will appear here…" />
+
+    <footer>
+      <a href="/privacy.html">Privacy Policy</a> |
+      <a href="/about.html">About &amp; Help</a>
+    </footer>
   </div>
 
   <script src="js/script.js"></script>
