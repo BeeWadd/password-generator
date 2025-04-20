@@ -4,60 +4,80 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="KwikPass.app – Free, responsive, no‑signup password generator. Adjust length & character sets, hit Generate, and copy your secure password with one click." />
   <title>KwikPass.app — Free Password Generator</title>
   <link rel="stylesheet" href="css/style.css" />
-  <!-- Global AdSense snippet for Auto Ads -->
+  <!-- Global AdSense for Auto Ads -->
   <script async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3843783457077507"
           crossorigin="anonymous"></script>
 </head>
 <body>
   <div class="container">
-    <h1>Generate a Secure Password in Seconds</h1>
 
-    <p>
-      Strong passwords are your first line of defense online. KwikPass.app helps you
-      create random, high‑entropy passwords with no signup required.
-    </p>
-    <p>
-      Choose your length (4–128) and character sets (lowercase, UPPERCASE, numbers,
-      symbols), click “Generate,” then copy your new password with one click.
-      It’s fast, simple, and ad‑free in the tool itself.
-    </p>
+    <!-- Hero -->
+    <section class="section hero">
+      <h1 class="title">Generate a Secure Password in Seconds</h1>
+      <p class="lead">
+        Strong passwords are your first line of defense. KwikPass.app gives you
+        a fast, no‑signup way to create random, high‑entropy passwords right in your browser.
+      </p>
+    </section>
 
-    <!-- Manual AdSense unit (replace YOUR_AD_SLOT with your actual slot ID) -->
-    <ins class="adsbygoogle"
-         style="display:block; text-align:center; margin:1.5rem 0;"
-         data-ad-client="ca-pub-3843783457077507"
-         data-ad-slot="YOUR_AD_SLOT"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
-    <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
+    <!-- Optional Header Image -->
+    <section class="section header-image">
+      <img src="/img/lock.png"
+           alt="Icon of a secure lock"
+           class="img-responsive"/>
+    </section>
 
-    <div class="controls">
-      <label>
-        Length:
-        <input type="number" id="length" min="4" max="128" value="12" />
+    <!-- AdSense will inject Auto‑Ads here among your content -->
+    
+    <!-- Controls -->
+    <section class="section controls">
+      <h2 class="subtitle">Customize Your Password</h2>
+      <label>Length:
+        <input type="number" id="length" min="4" max="128" value="12"/>
       </label>
-      <label><input type="checkbox" id="lower" checked /> Include lowercase</label>
-      <label><input type="checkbox" id="upper" checked /> Include UPPERCASE</label>
-      <label><input type="checkbox" id="number" checked /> Include numbers</label>
-      <label><input type="checkbox" id="symbol" checked /> Include symbols</label>
-    </div>
+      <label><input type="checkbox" id="lower" checked/> Include lowercase</label>
+      <label><input type="checkbox" id="upper" checked/> Include UPPERCASE</label>
+      <label><input type="checkbox" id="number" checked/> Include numbers</label>
+      <label><input type="checkbox" id="symbol" checked/> Include symbols</label>
+      <div class="buttons">
+        <button id="generate">Generate</button>
+        <button id="copy">Copy</button>
+      </div>
+    </section>
 
-    <div class="buttons">
-      <button id="generate">Generate</button>
-      <button id="copy">Copy</button>
-    </div>
+    <!-- Output -->
+    <section class="section output">
+      <h2 class="subtitle">Your Password</h2>
+      <input type="text" id="output" readonly placeholder="••••••••••••"/>
+    </section>
 
-    <input type="text" id="output" readonly placeholder="Your password will appear here…" />
+    <!-- FAQ -->
+    <section class="section faq">
+      <h2 class="subtitle">Got Questions?</h2>
+      <details>
+        <summary>What makes a password “strong”?</summary>
+        <p>A strong password is at least 12 characters long and mixes upper/lowercase letters, numbers, and symbols to resist guessing and brute‑force attacks.</p>
+      </details>
+      <details>
+        <summary>Can I control pronouncability?</summary>
+        <p>Not yet—but coming soon! You’ll be able to toggle a “pronounceable” mode for memorable, word‑like passwords.</p>
+      </details>
+      <details>
+        <summary>Is any data sent to a server?</summary>
+        <p>No—everything runs locally in your browser. We don’t collect or store any of your generated passwords.</p>
+      </details>
+    </section>
 
-    <footer>
+    <!-- Footer -->
+    <footer class="section footer">
       <a href="/privacy.html">Privacy Policy</a> |
-      <a href="/about.html">About &amp; Help</a>
+      <a href="/about.html">About & Help</a>
     </footer>
+
   </div>
 
   <script src="js/script.js"></script>
