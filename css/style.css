@@ -122,4 +122,65 @@
 .controls button {
   margin: 0 0.5rem;
 }
+
+/* Make container wider on larger screens */
+.container {
+  width: 90%;
+  max-width: 480px;  /* current default */
+  margin: 0 auto;
+}
+
+/* At tablet+ sizes, allow bigger container */
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;  /* give it more breathing room */
+  }
+  .title {
+    font-size: 2.8rem; /* bump up the main heading */
+  }
+  .subtitle {
+    font-size: 2rem;   /* bump up section headings */
+  }
+}
+
+/* Scale up your header image on desktop */
+.header-image img.img-responsive {
+  max-width: 120px; /* mobile default */
+}
+
+/* On larger screens, enlarge the icon */
+@media (min-width: 640px) {
+  .header-image img.img-responsive {
+    max-width: 200px;
+  }
+}
+
+/* Center the header-image section */
+.header-image {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+/* Make the icon larger on mobile */
+.header-image img.img-responsive {
+  width: 150px;    /* was 120px */
+  height: auto;
+}
+
+/* On tablets/desktops, let it fill up to 50% of container */
+@media (min-width: 640px) {
+  .header-image img.img-responsive {
+    width: 50%;      /* 50% of .container’s width */
+    max-width: 300px;/* cap at 300px so it doesn’t get huge */
+  }
+}
+
+/* If you’d rather full‑bleed cover, use this instead:
+.header-image img.img-responsive {
+  width: 100%;
+  max-width: none;
+}
+*/
+
   
